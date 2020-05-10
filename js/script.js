@@ -14,25 +14,25 @@ function consomeDados () {
              function (cards) {
                  arrayCards = cards;
                 colocaDadosNaTela(cards);
-                escondeMostraLoading(false)
+                escondeMostraLoading(false);
              }   
             ).catch(
                 function (err) {
-                    deuErro(err)
-                    escondeMostraLoading(false)
+                    deuErro(err);
+                    escondeMostraLoading(false);
                 } 
             )
         } 
     ).catch(
         function (err) {
             deuErro(err);
-            escondeMostraLoading(false)
+            escondeMostraLoading(false);
         }
     );
 }
 
 function deuErro (err) {
-    alert('algo inesperado aconteceu, tente novamente mais tarde')
+    alert('Algo inesperado aconteceu, tente novamente mais tarde');
 }
 
 function colocaDadosNaTela(cardsArray) {
@@ -45,7 +45,7 @@ function colocaDadosNaTela(cardsArray) {
                 <h6><b>${card.name}</b></h6>
                 <hr>
                 <p class="card-type"><i>${card.property_type}</i></p>
-                <p class="card-price">R$${card.price} / noite</p>
+                <p class="card-price"><strong>R$${card.price}</strong>/noite</p>
             </div>
         </div>
         `;
@@ -54,12 +54,12 @@ function colocaDadosNaTela(cardsArray) {
 }
 
 function filtraTipoLugar(tipoLugar) {
-        let dadosFiltrados = []
+        let dadosFiltrados = [];
         if(tipoLugar === 'Todos') {
             dadosFiltrados =  arrayCards;   
         }else {
             dadosFiltrados = arrayCards.filter(function(item) {
-                return item.property_type === tipoLugar
+                return item.property_type === tipoLugar;
             });
         }
        
@@ -69,8 +69,8 @@ function filtraTipoLugar(tipoLugar) {
 
 function escondeMostraLoading(aberto) {
     if(aberto) {
-        loading.style.display='flex'
+        loading.style.display='flex';
     } else {
-        loading.style.display='none'
+        loading.style.display='none';
     }
 }
