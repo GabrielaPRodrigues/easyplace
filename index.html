@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EasyPlace</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid covid">
+        <div class="col-12">
+            <p>Confira as notícias sobre a COVID-19 no nosso portal. <a href="https://desafiocovid19news.netlify.app/"
+                    target="_blank">Saiba Mais</a></p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <header class="row row-header">
+            <div class="col-xs-12 col-md-3 logo">
+                <img src="img/logo.svg" alt="EasyPlace logo">
+                <h3>easyplace</h3>
+                    <style>
+                        @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital@1&display=swap');
+                    </style>
+            </div>
+            <div class="col-xs-12 col-md-9 menu">
+                <nav>
+                    <ul class="row">
+                        <li class="col-xs-12 col-md-4 col-lg-3 menu-item"><a href="#acomodations">Acomodações</a></li>
+                        <li class="col-xs-12 col-md-4  col-lg-3 menu-item"><a href="#">Ajuda</a></li>
+                        <li class="col-xs-12 col-md-4 col-lg-3 btn-profile">
+                            <a href="https://github.com/GabrielaPRodrigues" target="_blank">
+                                <div class="profile">
+                                    <p>Gabriela</p>
+                                    <img src="img/gabriela.jpg">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    
+    <div class="container">
+        <div class="row search">
+            <div class="col-xs-12 col-md-6  col-lg-3">
+                <label>Localização</label>
+                <input type="text" placeholder="Qual o seu destino?">
+            </div>
+            <div class="col-xs-12 col-md-6  col-lg-2">
+                <label>Check-In</label>
+                <input type="date">
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-2">
+                <label>Check-Out</label>
+                <input type="date">
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <label>Hóspedes</label>
+                <input type="number" placeholder="Número de hóspedes">
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-2 search-btn">
+                <button>
+                    <img src="img/search.svg">
+                    Buscar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <section id="acomodations" class="title-cards">
+        <b>
+            <p>Confira as nossas acomodações</p>
+        </b>
+        <div class="row col-md-12 filter-btn">
+            <div>
+                <button onclick="filtraTipoLugar('Todos')">
+                    Todos
+                </button>
+            </div>
+            <div>
+                <button onclick="filtraTipoLugar('Casa')">
+                    Casa
+                </button>
+            </div>
+            <div>
+                <button onclick="filtraTipoLugar('Apartamento')">
+                    Apartamento
+                </button>
+            </div>
+            <div>
+                <button onclick="filtraTipoLugar('Chácara')">
+                    Chácara
+                </button>
+            </div>
+            <div>
+                <button onclick="filtraTipoLugar('Quarto')">
+                    Quarto
+                </button>
+            </div>
+            <div>
+                <button onclick="filtraTipoLugar('Estúdio')">
+                    Estúdio
+                </button>
+            </div>
+            <div>
+                <button onclick="filtraTipoLugar('Loft')">
+                    Loft
+                </button>
+            </div>
+            <div>
+                <button onclick="filtraTipoLugar('Sítio')">
+                    Sítio
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cards" class="container-fluid cards">
+
+    </section>
+    <section id="loading" class="loading">
+        <figure>
+            <img src="img/giphy.gif">
+            <figcaption>Carregando...</figcaption>
+        </figure>
+       
+    </section>
+    <footer class="footer">
+        <div class="col-xs-12 container">
+            <p> ©️ 2020 Desafio Hiring Coders | Desenvolvido por Gabriela Rodrigues   
+                <div class="col-xs-12">
+                    <a href="https://www.linkedin.com/in/gabrielaprodrigues/" target="_blank"><img src="img/linkedin.svg" alt="linkedin"></a>
+                    <a href="https://github.com/GabrielaPRodrigues" target="_blank"><img src="img/github.svg" alt="github"></a>
+                </div>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
