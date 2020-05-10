@@ -156,6 +156,11 @@ header li{
    height: 188px;
 }
 
+.card-price b{
+    color: #9E2B25;
+    font-size: 20px;
+}
+
 .search{
     align-items: center;
     justify-content: center;
@@ -176,6 +181,7 @@ input{
     height: 30px;
     border: none !important;
     border-bottom: 1px solid #9E2B25 !important;
+    outline: none;
 }
 
 ::placeholder{
@@ -205,6 +211,7 @@ input[type="date"]{
     background-color: #9E2B25;
     color: white;
     font-weight: 700;
+    outline: none;
 }
 
 .search-btn img{
@@ -234,6 +241,7 @@ input[type="date"]{
     background-color: white;
     border-radius: 30px;
     box-shadow: 0px 1px 2px #9E2B25;
+    outline: none;
 }
 
 .filter-btn button:hover{
