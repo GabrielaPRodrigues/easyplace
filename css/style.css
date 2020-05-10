@@ -311,15 +311,14 @@ input[type="date"]{
         justify-content: center;
         padding: 0;
     } 
+    .search-btn button {
+        margin-top: 15px;
+    }
 }
 
 @media screen and (min-width: 468px) and  (max-width: 1023px) {
     .logo h3 {
         font-size: 1.5rem;
-    }
-
-    .search-btn button {
-        margin-top: 15px;
     }
 }
 
